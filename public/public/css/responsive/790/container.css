@@ -1,0 +1,13 @@
+.doble-left {
+    width: 100% !important;
+    background: rgba( 33, 33, 33, 0.6) !important;
+}
+
+.doble-left:after {
+    left: 0px;
+    z-index: -1;
+}
+
+.doble-left * {
+    color: white !important;
+}

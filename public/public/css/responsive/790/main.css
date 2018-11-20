@@ -1,0 +1,13 @@
+/* Right Icons */
+header #cont-menu #cont-menu--contact {
+    width: 20px;
+}
+
+header #cont-menu #cont-menu--contact a {
+    width: 6px;
+    height: 25px;
+}
+
+header #cont-menu #cont-menu--contact a img {
+    margin-bottom: 35px !important;
+}

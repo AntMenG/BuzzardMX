@@ -1,0 +1,316 @@
+* {
+    margin: 0 0;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;    
+    width: 100vw;
+    font-size: 13px;
+    font-weight: 400;
+    color: #9b9b9b;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	width: 2px !important;
+	background: rgba( 180, 180, 180, 0.6);
+}
+
+#bMenu {
+    width: 50px;
+    height: 50px;
+    display: none;
+    margin-top: 25px;
+    border: solid 0px;
+    margin-right: 35px;
+    position: relative;
+    background: transparent;
+}
+
+#bMenu::before,
+#bMenu::after {
+    transition: all linear 0.2s;
+}
+
+#bMenu::before {
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    content: "";
+    height: 30px;
+    position: absolute;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+#bMenu::after {
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    content: "";
+    height: 0px;
+    position: absolute;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+#bMenu.active::before {
+    height: 0px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#bMenu.active::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 300;
+    color: white;
+    min-height: 100px;
+    position: absolute;
+    transition: all linear 0.2s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header.hide {
+    top: -100px;
+}
+
+.hf, .hwf {
+    left: 0px;
+    top: 0px !important;
+    background: white;
+    border-bottom: solid 0px;
+    position: fixed !important;
+    box-shadow: 0px 0px 20px 0px rgba( 55, 55, 55, 0.3);
+}
+
+.hf * , .hwf * {
+    color: #333 !important;
+    filter: none !important;
+    border-left-color: rgb( 230, 230, 230) !important;
+}
+
+.hf a:hover::before, .hwf a:hover::before {
+    background: black !important;
+    box-shadow: 0px 0px 100px 15px rgba( 33, 33, 33, 0.3) !important;
+}
+
+.hf #title img, .hwf #title img {
+    filter: invert(1) !important;
+}
+
+.hf #bMenu::before, .hwf #bMenu::before {
+    border-color: #333333;
+}
+
+.hf #bMenu::after, .hwf #bMenu::after {
+    border-color: #333333;
+}
+
+.container {
+    margin: auto auto;
+    max-width: 1170px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: solid 30px;
+    border-right: solid 30px;
+    border-color: transparent;
+}
+
+#title {
+    float: left;
+    height: 40px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 39.5px;
+    border-top: solid 30px;
+    border-bottom: solid 30px;
+    border-color: transparent;
+}
+
+#title img {
+    margin-top: -1px;
+}
+
+#title * {
+    float: left;
+    stroke-width:1;
+    stroke:rgba(33,33,33,0.4);
+}
+
+header #cont-menu,
+header #cont-menu > div {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+}
+
+.undecorated * {
+    text-decoration: none;
+}
+
+header #cont-menu  a {
+    height: 100%;
+    float: left;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 700;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    color: rgb( 255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+}
+
+header #cont-menu #cont-menu--services a:before {
+    width: 0%;
+    left: 50%;
+    height: 2px;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all linear 0.2s;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 100px 0px rgba( 255, 255, 255, 0.3);
+}
+
+header #cont-menu #cont-menu--services a:hover::before {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 10px rgba( 255, 255, 255, 1);
+}
+
+header #cont-menu #cont-menu--contact {
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+header #cont-menu #cont-menu--contact a img {
+    opacity: 0.8;
+    margin-bottom: -3px;
+    transition: opacity linear 0.2s;
+}
+
+header #cont-menu #cont-menu--contact a:nth-child(1) img {
+    margin-bottom: -1px;
+}
+
+header #cont-menu #cont-menu--contact a:hover img {
+    opacity: 1;
+}
+
+
+#cover {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: background linear 0.4s;
+    background-image: url(../img/cover1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#cover * {
+    z-index: 1;
+}
+
+#cover::before {
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba( 33, 33, 33, 0.3);
+}
+
+#cover #c--content {
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    height: calc(100% - 100px);
+    border-top: solid 100px transparent;
+}
+
+#cover #c--content h1 {
+    color: white;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cover #c--content p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#cover #c--content button,
+#cover #c--content a  {
+    z-index: 2;
+    padding: 0;
+    width: 170px;
+    height: 51px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 35px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0;
+    line-height: 49px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 0.26px;    
+    background: transparent;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    transition: all linear 0.2s;
+    font-family: 'Raleway', sans-serif;
+}
+
+#cover #c--content a  {
+    height: 49px;
+}
+
+#cover #c--content button:hover,
+#cover #c--content a:hover {
+    color: rgb( 55, 55, 55);
+    background: rgb( 255, 255, 255);
+}
+
+#cover #c--content .container {
+    border-top: solid 90px;
+    border-bottom: solid 90px;
+    border-color: transparent;
+}

@@ -1,0 +1,35 @@
+<header>
+    <div class="container">
+        <div id="title" href="/">
+            <img src="/public/img/logo/logoWhite.svg" width="40" height="40" alt="">
+            <span>UZZARD</span>
+        </div>
+        <div id="cont-menu" class="undecorated">
+            <div id="cont-menu--contact">
+                <a href="https://www.facebook.com/BuzzardMx-1183584925111653/">
+                    <img style="filter: invert(0.95);" src="/public/img/icons/svg/043-facebook-1.svg" width="14" height="14" alt=""></a>
+                </a>
+                <a href="">
+                    <img style="filter: invert(0.95);" src="/public/img/icons/svg/013-twitter-1.svg" width="16" height="16" alt=""></a>
+                </a>
+                <a href="">
+                    <img style="filter: invert(0.95);" src="/public/img/icons/svg/002-youtube.svg" width="16" height="16" alt=""></a>
+                </a>
+                <a href="">
+                    <img style="filter: invert(0.95);" src="/public/img/icons/svg/039-github.svg" width="16" height="16" alt=""></a>
+                </a>
+            </div>
+            <button id="bMenu"></button>
+            <div id="cont-menu--services">                
+                <a href="{{#ifeq main true}}#seeMore{{/ifeq}}{{#ifeq main false}}/#seeMore{{/ifeq}}">
+                    Servicios
+                </a>
+                <a href="{{#ifeq main true}}#nosotros{{/ifeq}}{{#ifeq main false}}/#nosotros{{/ifeq}}">
+                    Nosotros
+                </a>
+                <a href="">Cursos</a>
+                <a href="">Contacto</a>
+            </div>
+        </div>
+    </div>
+</header>
