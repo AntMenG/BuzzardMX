@@ -2,6 +2,7 @@
     margin: 0 0;
     outline: none;
     font-family: 'Raleway', sans-serif;
+    font-variant: initial;
 }
 
 body {
@@ -83,10 +84,10 @@ header {
     left: 0px;
     width: 100vw;
     z-index: 300;
-    color: white;
     min-height: 100px;
     position: absolute;
     transition: all linear 0.2s;
+    color: rgb( 245, 245, 245);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -107,6 +108,10 @@ header.hide {
     color: #333 !important;
     filter: none !important;
     border-left-color: rgb( 230, 230, 230) !important;
+}
+
+.hf a, .hwf a {
+    font-weight: 700 !important;
 }
 
 .hf a:hover::before, .hwf a:hover::before {
@@ -176,12 +181,13 @@ header #cont-menu  a {
     display: block;
     font-size: 14px;
     overflow: hidden;
-    font-weight: 700;
+    font-weight: 500;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    font-variant: initial;
     text-transform: uppercase;
-    color: rgb( 255, 255, 255);
+    color: rgb( 242, 242, 242);
     background: rgba(0, 0, 0, 0);
 }
 
@@ -262,15 +268,14 @@ header #cont-menu #cont-menu--contact a:hover img {
 #cover #c--content h1 {
     color: white;
     font-size: 54px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
 }
 
 #cover #c--content p {
     color: white;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #cover #c--content button,
@@ -289,6 +294,7 @@ header #cont-menu #cont-menu--contact a:hover img {
     text-align: center;
     position: relative;
     border-radius: 50px;
+    font-variant: initial;
     text-decoration: none;
     display: inline-block;
     letter-spacing: 0.26px;    

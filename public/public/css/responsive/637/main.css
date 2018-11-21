@@ -27,3 +27,16 @@ header #cont-menu #cont-menu--services.active {
     height: 50px;
     display: block;
 }
+
+#cover #c--content h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#cover #c--content p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
