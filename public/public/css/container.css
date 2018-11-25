@@ -65,6 +65,8 @@
 .content {
     width: 100%;
     height: auto;
+    display: block;
+    position: relative;
     border-top: 90px solid;
     border-bottom: 90px solid;
     border-color: transparent;
@@ -123,8 +125,9 @@
 }
 
 .doble-left {
-    float: left;
-    position: absolute;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
     width: 50% !important;
     background: rgb( 248, 248, 248);
 }
@@ -147,11 +150,13 @@
 
 .doble-item {
     width: 50%;
-    float: left;
     padding-top: 20px;
     padding-left: 6px;
+    margin-left: -4px;
     padding-right: 6px;
     padding-bottom: 2px;
+    vertical-align: top;
+    display: inline-block;
     box-sizing: border-box;
 }
 

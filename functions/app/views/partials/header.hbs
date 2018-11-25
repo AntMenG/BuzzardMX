@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <div id="title" href="/">
+        <div id="title" href="#cover">
             <img src="/public/img/logo/BuzzardMX.png" height="40" alt="">
         </div>
         <div id="cont-menu" class="undecorated">
@@ -26,8 +26,8 @@
                 <a href="{{#ifeq main true}}#nosotros{{/ifeq}}{{#ifeq main false}}/#nosotros{{/ifeq}}">
                     Nosotros
                 </a>
-                <a href="">Cursos</a>
-                <a href="">Contacto</a>
+                <a href="{{#ifeq main true}}#cursos{{/ifeq}}{{#ifeq main false}}/#cursos{{/ifeq}}">Cursos</a>
+                <a href="{{#ifeq main true}}#contacto{{/ifeq}}{{#ifeq main false}}/#contacto{{/ifeq}}">Contacto</a>
             </div>
         </div>
     </div>

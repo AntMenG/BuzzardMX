@@ -320,3 +320,17 @@ header #cont-menu #cont-menu--contact a:hover img {
     border-bottom: solid 90px;
     border-color: transparent;
 }
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgb( 33, 37, 43);
+}
+
+footer hr {
+    width: 50px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
