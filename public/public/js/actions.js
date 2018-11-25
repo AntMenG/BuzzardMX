@@ -1,5 +1,7 @@
 $(function () {
 
+    $("html").scrollTop($("html").scrollTop() - 100);
+
     scrollP(); 
     function scrollP () {
         if ($(this).scrollTop() >= 400) {
