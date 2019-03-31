@@ -10,17 +10,23 @@
                 </div>
                 <div class="left">
                     <h2>Comienza a expandir tu negocio</h2>
-                    <p>¡Solicita tu asesoría ahora mismo! <br>Llamanos al: 55 868 71793</p>
-                    <button>
+                    <p>
+                        ¡Solicita tu asesoría ahora mismo! <br>
+                        Llamanos al: 
+                        <span>
+                            55 868 71793
+                        </span>
+                    </p>
+                    <a href="#sa">
                         SOLICITAR ASESORÍA
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="container">
-        <div class="c__wrapper">
+        <section class="c__wrapper">
             <div class="c__text">
                 <h1>
                     Diseño profesional y elegante
@@ -31,20 +37,20 @@
                 <p>
                     Nuestros diseños son adaptables a cualquier tipo de dispositivo
                     que cuente con un navegador web, lo que te permitirá llegar a
-                    cualquier cliente de forma correcta.
+                    la mayor cantidad de clientes de forma correcta.
                 </p>
-                <button class="web_back">
+                <a href="#sa" class="web_back">
                     SOLICITAR ASESORÍA
-                </button>
+                </a>
             </div>
             <div class="c__img">
                 <div class="image_wrapper phone web_back">
                     <img src="/public/img/services/web/mobile2.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="c__wrapper">
+        <section class="c__wrapper">
             <div class="c__text">
                 <h1>
                     Soluciones programables
@@ -57,16 +63,16 @@
                     estándares de seguridad para garantizar la protección de tu información
                     a demás de agilizar tu flujo de trabajo 
                 </p>
-                <button class="web_back">
+                <a href="#sa" class="web_back">
                     SOLICITAR ASESORÍA
-                </button>
+                </a>
             </div>
             <div class="c__img">
                 <div class="image_wrapper desktop web_back">
                     <img src="/public/img/services/web/location.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="container" style="padding-bottom: 80px;">
             <h1>Precios</h1><br>
@@ -103,6 +109,40 @@
                 <span>$ 7,000 - 11,000 MXN</span>
             </div>
         </div>
+        
+        <section id="sa" class="c__wrapper">
+            <div class="c__text">
+                <form action="/sa" method="POST">
+                    <h1>
+                        Solicitar Asesoría
+                    </h1>
+                    <p>
+                        Déjanos tus datos y te contactaremos en breve
+                    </p>
+                    <div class="image_wrapper phone web_back">
+                        <img src="/public/img/services/web/sa.jpg" alt="">
+                    </div>
+                    <input type="text" required name="nombre" placeholder="Nombre *" id="">
+                    <input type="email" required name="correo" placeholder="Correo Electrónico *" id="">
+                    <input type="number" required name="numero" placeholder="Número Telefónico *" id="">
+                    <input type="text" name="empresa" placeholder="Empresa" id="">
+                    <input type="text" name="puesto" placeholder="Puesto" id="">
+                    <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
+                    <input type="hidden" name="servicio" value="web">
+                    <div class="isBad">
+                        Debes de enviar todos los campos
+                    </div>
+                    <button class="web_back">
+                        ENVIAR SOLICITUD
+                    </button>
+                </form>
+            </div>
+            <div class="c__img">
+                <div class="image_wrapper phone web_back">
+                    <img style="max-width: 280px;" src="/public/img/services/web/sa.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
     </div>
 
@@ -119,3 +159,4 @@
     </footer>
 
 </div>
+<script src="/public/js/sa.js"></script>

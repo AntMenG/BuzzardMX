@@ -13,6 +13,11 @@
     background-position: bottom;
 }
 
+p span {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #sc--content {
     display: block;
     padding-top: 100px;    
@@ -49,21 +54,22 @@ p {
     margin-bottom: 30px;
 }
 
-#sc--content button {
-    display: block;
+#sc--content a {
+    display: table;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     border: solid 0px;
     padding: 20px 30px;
     background: white;
+    text-decoration: none;
     border-radius: 30px 30px;
     color: rgb( 56, 108, 225);
     transition: all linear 0.2s;
     box-shadow: 0px 12px 22px 1px rgba( 1, 1, 1, 0.4);
 }
 
-#sc--content button:hover {
+#sc--content a:hover {
     transform: scale(1.05);
     box-shadow: 0px 12px 22px 1px rgb( 56, 108, 225);
 }
@@ -134,12 +140,12 @@ p {
     align-items: center;
 }
 
-.c__wrapper:nth-child(2n) {
+.c__wrapper:nth-of-type(2n) {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
 }
 
-.c__wrapper:nth-child(2n) .c__img {
+.c__wrapper:nth-of-type(2n) .c__img {
     background: 
         url(../img/services/web/bubble2.svg) 
         0 
@@ -172,18 +178,21 @@ p {
     margin-bottom: 30px;
 }
 
+.c__wrapper a,
 .c__wrapper button {
     color: white;
-    display: block;
+    display: table;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     border: solid 0px;
     padding: 20px 30px;
+    text-decoration: none;
     border-radius: 30px 30px;
     transition: all linear 0.2s;
 }
 
+.c__wrapper a:hover,
 .c__wrapper button:hover {
     transform: scale(1.05);
 }
@@ -193,6 +202,56 @@ p {
     flex: 1;
     min-width: 240px;
     max-width: 460px;
+}
+
+.c__text input,
+.c__text textarea {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 6px 6px;
+    color: rgb( 62, 137, 238);
+    transition: all linear 0.2s;
+    background: rgb( 233, 237, 243);
+    border: solid 1px rgb(230, 230, 230);
+    box-shadow: -2px 2px 2px rgba( 1, 1, 1, 0.1) inset;
+}
+
+.c__text input[type="number"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.c__text input:hover,
+.c__text textarea:hover,
+.c__text input:focus,
+.c__text textarea:focus {
+    background: rgb( 243, 247, 253);
+    border: solid 1px rgb(72, 116, 209);
+}
+
+.isBad {
+    display: none;
+    font-size: 16px;
+    margin-top: -5px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 4px 4px;
+    color: rgb(212, 56, 29);
+    background: rgba(255, 99, 71, 0.7);
+    border: solid 1px rgb(212, 56, 29);
+}
+
+.isGood {
+    color: rgb(50, 83, 155) !important;
+    background: rgba(72, 116, 209, 0.7) !important;
+    border: solid 1px rgb(72, 116, 209) !important;
 }
     
 .c__text .image_wrapper {
@@ -220,7 +279,7 @@ p {
     #sc--content * {
         text-align: center !important;
     }
-    #sc--content button {
+    #sc--content a {
         margin-left: auto;
         margin-right: auto;
     }
@@ -248,7 +307,7 @@ p {
         text-align: center !important;
     }
     
-    .c__text button {
+    .c__text a {
         margin-left: auto;
         margin-right: auto;
     }

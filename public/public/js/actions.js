@@ -42,12 +42,10 @@ $(function () {
         }, 500, 'linear');
     }
 
-    $("#bMenu, a[href*='#']").on('click', function () {
-        var status = $("#cont-menu--services").css("display"),
-            bgc = $("#cont-menu--services a").css("background-color");
+    $("#bMenu, #cont-menu--services a[href*='#']").on('click', function () {
+        var status = $("#cont-menu--services").css("display");
         if (
-            status == "block" &&
-            bgc != "rgba(0, 0, 0, 0)"
+            status == "block"
         ) {
             $("#space").removeClass("blur");
             $("#bMenu").removeClass("active");
