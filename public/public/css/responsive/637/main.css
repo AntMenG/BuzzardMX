@@ -4,6 +4,7 @@ header #cont-menu #cont-menu--services {
     height: 100vw;
     display: none;
     position: absolute;
+    background: rgba( 240, 240, 240, 0.9) !important;
 }
 
 header #cont-menu #cont-menu--services a {
@@ -11,11 +12,12 @@ header #cont-menu #cont-menu--services a {
     height: 100px;
     box-sizing: border-box;
     color: rgb( 33, 33, 33);
-    background: rgba( 240, 240, 240, 0.9);
+    background: rgba( 240, 240, 240, 0);
 }
 
 header #cont-menu #cont-menu--services.active {
     display: block;
+    background: rgba( 240, 240, 240, 0.9) !important;
 }
 
 .blur {

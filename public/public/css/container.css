@@ -4,17 +4,17 @@
 }
 
 .pink {
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background: linear-gradient( -45deg, #2da8ff, #7c11ab) !important;
     box-shadow: 5px 5px 10px #ffe0e1;
 }
 
 .blue {
-    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    background: linear-gradient( -45deg, #2da8ff, #7c11ab) !important;
     box-shadow: 5px 5px 10px #c7e4df;
 }
 
 .plus {
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient( -45deg, #2da8ff, #7c11ab) !important;
     box-shadow: 5px 5px 10px #c7d1fc;
 }
 
@@ -40,20 +40,25 @@
     line-height: 30px;
     position: absolute;
     background: #8ddad5;
+    font-weight: bold !important;
     border-radius: 0px 0px 2px 2px;
     background: rgba(255, 255, 255, 0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .pink span {
-    color: #ff9a9e !important;
+    font-weight: bold;
+    color: rgb( 62, 137, 238) !important;
 }
 
 .blue span {
-    color: #00cdac !important;
+    font-weight: bold;
+    color: rgb( 62, 137, 238) !important;
 }
 
 .plus span {
-    color: #667eea !important;
+    font-weight: bold;
+    color: rgb( 62, 137, 238) !important;
 }
 
 .pink *,

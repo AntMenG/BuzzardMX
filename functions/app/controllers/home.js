@@ -8,13 +8,15 @@ module.exports = (app) => {
 router.get("/", (req, res) => {
     res.render("index", {
         title : "Software a tu Medida",
-        main : true
+        main : true,
+        service : false
     });
-})
+});
 
-router.get("/comprar_web", (req, res) => {
-    res.render("comprar_w", {
+router.get("/service/web", (req, res) => {
+    res.render("web", {
         title : "Comprar Web",
-        main : false
+        main : false,
+        service : true
     });
 })

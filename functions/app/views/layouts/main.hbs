@@ -8,6 +8,9 @@
     <link href="/public/css/fonts.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/public/css/main.css">
     <link rel="stylesheet" href="/public/css/container.css">
+    {{#ifeq service true}}
+        <link rel="stylesheet" href="/public/css/services.css">
+    {{/ifeq}}
     <link rel="stylesheet" media="(max-width: 790px)" href="/public/css/responsive/790/main.css">
     <link rel="stylesheet" media="(max-width: 790px)" href="/public/css/responsive/790/container.css">
     <link rel="stylesheet" media="(max-width: 637px)" href="/public/css/responsive/637/main.css">
