@@ -329,6 +329,12 @@ p {
     background: rgba(72, 116, 209, 0.7) !important;
     border: solid 1px rgb(72, 116, 209) !important;
 }
+
+.mobile .isGood {
+    color: white !important;
+    background: rgba(255, 106, 0, 0.7) !important;
+    border: solid 1px rgb(255, 106, 0) !important;
+}
     
 .c__text .image_wrapper {
     display: none;
