@@ -113,14 +113,6 @@
     margin-bottom: 25px;
 }
 
-.content .global_link {
-    font-size: 16px;
-    margin-top: 40px;
-    font-weight: 600;
-    display: inline-block;
-    color: rgb(66, 120, 165);
-}
-
 .last {
     margin-bottom: 26px;
 }
@@ -186,4 +178,25 @@
     vertical-align: top;
     display: inline-block;
     box-sizing: border-box;
+}
+
+.content .global_link {
+    top: 10px;
+    right: 10px;
+    display: table;
+    padding: 4px 8px;
+    font-weight: bold;
+    position: absolute;
+    background: white;
+    text-decoration: none;
+    border-radius: 6px 6px;
+    text-transform: uppercase;
+    color: rgb(66, 120, 165);
+    transition: all linear 0.2s;
+    box-shadow: 2px 2px 8px rgb( 210, 210, 210);    
+}
+
+.content .global_link:hover {
+    color: white;
+    background: rgb(66, 120, 165);
 }

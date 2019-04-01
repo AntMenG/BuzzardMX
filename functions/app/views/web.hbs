@@ -1,5 +1,32 @@
+<style>  
+    .hf, .hwf {
+        box-shadow: 0px 0px 20px 0px rgba( 56, 108, 225, 0.3);
+    }
+    .hf * , .hwf * {
+        color: rgb( 56, 108, 225) !important;
+        filter: none !important;
+    }
+
+    .hf a:hover::before, .hwf a:hover::before {
+        background: rgb( 56, 108, 225) !important;
+        box-shadow: 0px 0px 100px 15px rgba( 56, 108, 225, 0.3) !important;
+    }
+
+    .hf #bMenu::before, .hwf #bMenu::before {
+        border-color: rgb( 56, 108, 225);
+    }
+
+    .hf #bMenu::after, .hwf #bMenu::after {
+        border-color: rgb( 56, 108, 225);
+    }
+
+    .hf #cont-menu #cont-menu--contact {
+        border-left: 2px solid rgb( 56, 108, 225, 0.2) !important;
+    }
+</style>
+
 <div id="space">
-    <div id="service_cover">
+    <div id="service_cover" class="web">
         <div id="sc--content">
             <div class="container">
                 <div class="left">
@@ -17,7 +44,7 @@
                             55 868 71793
                         </span>
                     </p>
-                    <a href="#sa">
+                    <a class="web" href="#sa">
                         SOLICITAR ASESORÍA
                     </a>
                 </div>
@@ -25,14 +52,14 @@
         </div>
     </div>
 
-    <div id="container">
+    <div id="container" data-type="service">
         <section class="c__wrapper">
             <div class="c__text">
-                <h1>
+                <h1 class="web">
                     Diseño profesional y elegante
                 </h1>
                 <div class="image_wrapper phone web_back">
-                    <img src="/public/img/services/web/mobile2.png" alt="">
+                    <img src="/public/img/services/web/mobile.jpg" alt="">
                 </div>
                 <p>
                     Nuestros diseños son adaptables a cualquier tipo de dispositivo
@@ -43,20 +70,20 @@
                     SOLICITAR ASESORÍA
                 </a>
             </div>
-            <div class="c__img">
+            <div class="c__img web">
                 <div class="image_wrapper phone web_back">
-                    <img src="/public/img/services/web/mobile2.png" alt="">
+                    <img src="/public/img/services/web/mobile.jpg" alt="">
                 </div>
             </div>
         </section>
         
         <section class="c__wrapper">
             <div class="c__text">
-                <h1>
+                <h1 class="web">
                     Soluciones programables
                 </h1>
                 <div class="image_wrapper desktop web_back">
-                    <img src="/public/img/services/web/location.png" alt="">
+                    <img src="/public/img/services/web/location.jpg" alt="">
                 </div>
                 <p>
                     Administra tus necesidades desde un sistema web con los mejores
@@ -67,15 +94,15 @@
                     SOLICITAR ASESORÍA
                 </a>
             </div>
-            <div class="c__img">
+            <div class="c__img web">
                 <div class="image_wrapper desktop web_back">
-                    <img src="/public/img/services/web/location.png" alt="">
+                    <img src="/public/img/services/web/location.jpg" alt="">
                 </div>
             </div>
         </section>
 
         <div class="container" style="padding-bottom: 80px;">
-            <h1>Precios</h1><br>
+            <h1 class="web">Precios</h1><br>
             <div class="three-item pink">
                 <h2>Básica</h2>
                 <p>
@@ -113,7 +140,7 @@
         <section id="sa" class="c__wrapper">
             <div class="c__text">
                 <form action="/sa" method="POST">
-                    <h1>
+                    <h1 class="web">
                         Solicitar Asesoría
                     </h1>
                     <p>
@@ -137,7 +164,7 @@
                     </button>
                 </form>
             </div>
-            <div class="c__img">
+            <div class="c__img web">
                 <div class="image_wrapper phone web_back">
                     <img style="max-width: 280px;" src="/public/img/services/web/sa.jpg" alt="">
                 </div>

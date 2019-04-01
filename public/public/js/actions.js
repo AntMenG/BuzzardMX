@@ -1,16 +1,19 @@
 $(function () {
-
+    var element = $("#container");
+    var top = 100;
+    if (element.attr('data-type') == 'service') {
+        top = 160;
+    }
     $("html").scrollTop($("html").scrollTop() - 100);
 
     scrollP(); 
     function scrollP () {
-        var element = $("#container");
         if ($(this).scrollTop() >= 400) {
             $("header").addClass("hide");
         } else {
             $("header").removeClass("hide");
         }
-        if ($(this).scrollTop() >= element.offset().top - 100) {
+        if ($(this).scrollTop() >= element.offset().top - top) {
             $("header").addClass("hf");
         } else {
             $("header").removeClass("hf");

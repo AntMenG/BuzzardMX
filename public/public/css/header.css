@@ -1,0 +1,214 @@
+#bMenu {
+    width: 50px;
+    height: 50px;
+    display: none;
+    margin-top: 25px;
+    border: solid 0px;
+    margin-right: 35px;
+    position: relative;
+    background: transparent;
+}
+
+#bMenu::before,
+#bMenu::after {
+    transition: all linear 0.2s;
+}
+
+#bMenu::before {
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    content: "";
+    height: 30px;
+    position: absolute;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+#bMenu::after {
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    content: "";
+    height: 0px;
+    position: absolute;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+#bMenu.active::before {
+    height: 0px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#bMenu.active::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 300;
+    min-height: 100px;
+    position: absolute;
+    transition: all linear 0.2s;
+    color: rgb( 245, 245, 245);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header.hide {
+    top: -100px;
+}
+
+.hf, .hwf {
+    left: 0px;
+    top: 0px !important;
+    background: white;
+    border-bottom: solid 0px;
+    position: fixed !important;
+    box-shadow: 0px 0px 20px 0px rgba( 55, 55, 55, 0.3);
+}
+
+.hf * , .hwf * {
+    filter: none !important;
+    color: #333 !important;
+    border-left-color: rgb( 230, 230, 230) !important;
+}
+
+.hf a, .hwf a {
+    font-weight: 700 !important;
+}
+
+.hf a:hover::before, .hwf a:hover::before {
+    background: black !important;
+    box-shadow: 0px 0px 100px 15px rgba( 33, 33, 33, 0.3) !important;
+}
+
+.hf #title img, .hwf #title img {
+    filter: invert(1) !important;
+}
+
+.hf #bMenu::before, .hwf #bMenu::before {
+    border-color: #333333;
+}
+
+.hf #bMenu::after, .hwf #bMenu::after {
+    border-color: #333333;
+}
+
+
+#title {
+    float: left;
+    height: 40px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    line-height: 39.5px;
+    border-top: solid 30px;
+    border-bottom: solid 30px;
+    border-color: transparent;
+}
+
+#title img {
+    margin-top: -1px;
+}
+
+#title svg {
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    fill: currentColor;
+    stroke-width: 0px !important;
+    stroke: transparent !important;
+}
+
+#title span {
+    top: 0px;
+    left: 42px;
+    font-size: 25px;
+    position: absolute;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+#title * {
+    float: left;
+    stroke-width:1;
+    stroke:rgba(33,33,33,0.4);
+}
+
+header #cont-menu,
+header #cont-menu > div {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+}
+
+.undecorated * {
+    text-decoration: none;
+}
+
+header #cont-menu  a {
+    height: 100%;
+    float: left;
+    display: block;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 500;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-variant: initial;
+    text-transform: uppercase;
+    color: rgb( 242, 242, 242);
+    background: rgba(0, 0, 0, 0);
+}
+
+header #cont-menu #cont-menu--services a:before {
+    width: 0%;
+    left: 50%;
+    height: 2px;
+    bottom: 0px;
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all linear 0.2s;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 100px 0px rgba( 255, 255, 255, 0.3);
+}
+
+header #cont-menu #cont-menu--services a:hover::before {
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 10px rgba( 255, 255, 255, 1);
+}
+
+header #cont-menu #cont-menu--contact {
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+header #cont-menu #cont-menu--contact a {
+    padding-top: 1.4px;
+}
+
+header #cont-menu #cont-menu--contact a i {
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    font-size: 15.5px;
+    transition: opacity linear 0.2s;
+    transform: scale(1);
+}
+
+header #cont-menu #cont-menu--contact a:hover i {
+    opacity: 1;
+}

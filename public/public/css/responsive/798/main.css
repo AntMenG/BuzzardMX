@@ -5,7 +5,11 @@ header #cont-menu #cont-menu--contact {
 
 header #cont-menu #cont-menu--contact a {
     width: 6px;
-    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    max-height: 24px !important;
 }
 
 header #cont-menu #cont-menu--contact a img {

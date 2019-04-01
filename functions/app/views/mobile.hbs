@@ -1,0 +1,154 @@
+<style>  
+    .hf, .hwf {
+        box-shadow: 0px 0px 20px 0px rgba( 247, 57, 63, 0.3);
+    }
+    .hf * , .hwf * {
+        color: rgb( 247, 57, 63) !important;
+        filter: none !important;
+    }
+
+    .hf a:hover::before, .hwf a:hover::before {
+        background: rgb( 247, 57, 63) !important;
+        box-shadow: 0px 0px 100px 15px rgba( 247, 57, 63, 0.3) !important;
+    }
+
+    .hf #bMenu::before, .hwf #bMenu::before {
+        border-color: rgb( 247, 57, 63) !important;
+    }
+
+    .hf #bMenu::after, .hwf #bMenu::after {
+        border-color: rgb( 247, 57, 63) !important;
+    }
+
+    .hf #cont-menu #cont-menu--contact {
+        border-left: 2px solid rgb( 247, 57, 63, 0.2) !important;
+    }
+</style>
+<div id="space">
+    <div id="service_cover" class="mobile">
+        <div id="sc--content">
+            <div class="container">
+                <div class="left">
+                    <h1>Aplicaciones para android & iOS</h1>
+                </div>
+                <div class="right">
+                    <img src="/public/img/services/mobile/web.png" alt="" srcset="">
+                </div>
+                <div class="left">
+                    <h2>Has tu idea realidad</h2>
+                    <p>
+                        ¡Solicita tu asesoría ahora mismo! <br>
+                        Llamanos al: 
+                        <span>
+                            55 868 71793
+                        </span>
+                    </p>
+                    <a class="mobile" href="#sa">
+                        SOLICITAR ASESORÍA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container" data-type="service">
+        <section class="c__wrapper">
+            <div class="c__text">
+                <h1 class="mobile">
+                    Tu satisfacción es lo más importante
+                </h1>
+                <div class="image_wrapper phone mobile_back">
+                    <img src="/public/img/services/mobile/app.png" alt="">
+                </div>
+                <p>
+                    Desarrollamos aplicaciones móviles para todo tipo y tamaño de empresas 
+                    y negocios que desean crecer y generar nuevas oportunidades de 
+                    crecimiento e incrementar sus ventas
+                </p>
+                <a href="#sa" class="mobile_back">
+                    SOLICITAR ASESORÍA
+                </a>
+            </div>
+            <div class="c__img mobile">
+                <div class="image_wrapper phone mobile_back">
+                    <img src="/public/img/services/mobile/app.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section class="c__wrapper">
+            <div class="c__text">
+                <h1 class="mobile">
+                    Para los dispositivos más utilizados
+                </h1>
+                <div class="image_wrapper desktop mobile_back">
+                    <img src="/public/img/services/mobile/mobiles.jpg" alt="">
+                </div>
+                <p>
+                   Desarrollamos aplicaciones para los sistemas operativos iOS 
+                   (para iPhone y iPad), Android y Windows Phone, con precios sorprendentes 
+                   y calidad garantizada.
+
+
+                </p>
+                <a href="#sa" class="mobile_back">
+                    SOLICITAR ASESORÍA
+                </a>
+            </div>
+            <div class="c__img mobile">
+                <div class="image_wrapper desktop mobile_back">
+                    <img src="/public/img/services/mobile/mobiles.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section id="sa" class="c__wrapper">
+            <div class="c__text">
+                <form action="/sa" class="mobile" method="POST">
+                    <h1 class="mobile">
+                        Solicitar Asesoría
+                    </h1>
+                    <p>
+                        Déjanos tus datos y te contactaremos en breve
+                    </p>
+                    <div class="image_wrapper phone mobile_back">
+                        <img src="/public/img/services/web/sa.jpg" alt="">
+                    </div>
+                    <input type="text" required name="nombre" placeholder="Nombre *" id="">
+                    <input type="email" required name="correo" placeholder="Correo Electrónico *" id="">
+                    <input type="number" required name="numero" placeholder="Número Telefónico *" id="">
+                    <input type="text" name="empresa" placeholder="Empresa" id="">
+                    <input type="text" name="puesto" placeholder="Puesto" id="">
+                    <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
+                    <input type="hidden" name="servicio" value="mobile">
+                    <div class="isBad">
+                        Debes de enviar todos los campos
+                    </div>
+                    <button class="mobile_back">
+                        ENVIAR SOLICITUD
+                    </button>
+                </form>
+            </div>
+            <div class="c__img mobile">
+                <div class="image_wrapper phone mobile_back">
+                    <img style="max-width: 280px;" src="/public/img/services/web/sa.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer id="contacto">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <h5>Correo Electrónico</h5>
+            <h3>servicios@buzzardmx.com</h3>
+            <h3>contacto@buzzardmx.com</h3> 
+            <center><hr></center>            
+            <h5>Teléfono</h5>
+            <h3>5586871793.</h3>
+        </div>
+    </footer>
+
+</div>
+<script src="/public/js/sa.js"></script>

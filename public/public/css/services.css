@@ -1,5 +1,11 @@
 .web_back {
+    color: rgba( 56, 108, 225, 0.5);
     background: linear-gradient( -45deg, #2da8ff, #7c11ab) !important;
+}
+
+.mobile_back {
+    color: rgba( 247, 57, 63, 0.5);
+    background: linear-gradient( -45deg, #ee0979, #ff6a00) !important;
 }
 
 #service_cover {
@@ -7,7 +13,17 @@
     height: auto;
     padding-bottom: 200px;
     margin-bottom: -180px;
+}
+
+#service_cover.web {
     background-image: url(../img/service_web.svg);
+    background-size: 2000px auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#service_cover.mobile {
+    background-image: url(../img/service_mobile.svg);
     background-size: 2000px auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -64,14 +80,29 @@ p {
     background: white;
     text-decoration: none;
     border-radius: 30px 30px;
-    color: rgb( 56, 108, 225);
     transition: all linear 0.2s;
-    box-shadow: 0px 12px 22px 1px rgba( 1, 1, 1, 0.4);
 }
 
 #sc--content a:hover {
     transform: scale(1.05);
-    box-shadow: 0px 12px 22px 1px rgb( 56, 108, 225);
+}
+
+#sc--content a.web {
+    color: rgb( 56, 108, 225);
+    box-shadow: 0px 12px 22px 1px rgba( 56, 108, 225, 0.3);
+}
+
+#sc--content a.web:hover {
+    box-shadow: 0px 12px 22px 1px rgba( 56, 108, 225, 0.5);
+}
+
+#sc--content a.mobile {
+    color: rgb( 247, 57, 63);
+    box-shadow: 0px 12px 22px 1px rgba( 247, 57, 63, 0.3);
+}
+
+#sc--content a.mobile:hover {
+    box-shadow: 0px 12px 22px 1px rgba( 247, 57, 63, 0.5);
 }
 
 #sc--content .container {
@@ -105,7 +136,7 @@ p {
     padding: 20px 20px;
     box-sizing: border-box;
     border-radius: 20px 20px;
-    box-shadow: 0px 8px 20px 0px rgba( 1, 1, 1, 0.3);
+    box-shadow: 0px 8px 20px 0px;
 }
 
 .image_wrapper img {
@@ -155,6 +186,24 @@ p {
     padding: 0 0% 0 10%;
 }
 
+.c__wrapper:nth-of-type(2n) .c__img.web {
+    background: 
+        url(../img/services/web/bubble2.svg) 
+        0 
+        100%
+        no-repeat;
+    background-size: contain;
+}
+
+.c__wrapper:nth-of-type(2n) .c__img.mobile {
+    background: 
+        url(../img/services/mobile/bubble2.svg) 
+        0 
+        100%
+        no-repeat;
+    background-size: contain;
+}
+
 .c__wrapper h1,
 .c__wrapper h2,
 .c__wrapper p {
@@ -168,7 +217,18 @@ p {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(45deg,#b721ff,#21d4fd);
+}
+
+.c__wrapper h1.web,
+.container > h1.web {
+    background: -webkit-linear-gradient( -45deg, #2da8ff, #7c11ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.c__wrapper h1.mobile,
+.container > h1.mobile {
+    background: -webkit-linear-gradient( -45deg, #ee0979, #ff6a00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -217,8 +277,8 @@ p {
     color: rgb( 62, 137, 238);
     transition: all linear 0.2s;
     background: rgb( 233, 237, 243);
-    border: solid 1px rgb(230, 230, 230);
-    box-shadow: -2px 2px 2px rgba( 1, 1, 1, 0.1) inset;
+    border: solid 1px rgba(72, 116, 209, 0.2);
+    box-shadow: -2px 2px 2px rgba( 72, 116, 209, 0.2) inset;
 }
 
 .c__text input[type="number"] {
@@ -231,6 +291,22 @@ p {
 .c__text textarea:focus {
     background: rgb( 243, 247, 253);
     border: solid 1px rgb(72, 116, 209);
+}
+
+.c__text .mobile input,
+.c__text .mobile textarea {
+    color: rgb( 255, 106, 0);
+    background: rgb(255, 246, 241);
+    border: solid 1px rgba(255, 106, 0, 0.2);
+    box-shadow: -2px 2px 2px rgba(207, 96, 16, 0.2) inset;
+}
+
+.c__text .mobile input:hover,
+.c__text .mobile textarea:hover,
+.c__text .mobile input:focus,
+.c__text .mobile textarea:focus {
+    background: rgb(255, 251, 249);
+    border: solid 1px rgb(255, 106, 0) !important;
 }
 
 .isBad {
@@ -259,17 +335,29 @@ p {
 }
 
 .c__img {
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 400px;
+    padding: 0 5% 0 10%;
+    margin-right: 40px;
+}
+
+.c__img.web {
     background: 
     url(../img/services/web/bubble.svg) 
         0 
         100%
         no-repeat;
     background-size: contain;
-    -ms-flex: 1;
-    flex: 1;
-    max-width: 400px;
-    padding: 0 5% 0 10%;
-    margin-right: 40px;
+}
+
+.c__img.mobile {
+    background: 
+    url(../img/services/mobile/bubble.svg) 
+        0 
+        100%
+        no-repeat;
+    background-size: contain;
 }
 
 @media only screen and (max-width: 637px) {
