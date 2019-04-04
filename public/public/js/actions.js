@@ -47,13 +47,18 @@ $(function () {
 
     $("#bMenu, #cont-menu--services a[href*='#']").on('click', function () {
         var status = $("#cont-menu--services").css("display");
+        if ($(window).scrollTop() < element.offset().top - top && status != "block") {
+            $('header').attr('incover','true');
+        } else {$('header').attr('incover','false');}
         if (
             status == "block"
         ) {
+            $('body').css('overflow-y','inherit');
             $("#space").removeClass("blur");
             $("#bMenu").removeClass("active");
             $("#cont-menu--services").removeClass("active");
         } else {
+            $('body').css('overflow-y','hidden');
             $("#space").addClass("blur");
             $("#bMenu").addClass("active");
             $("#cont-menu--services").addClass("active");

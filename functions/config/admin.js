@@ -1,6 +1,6 @@
 const admin = require('firebase-admin');
 
-const serviceAccount = require('../sak.json');
+const serviceAccount = require('../sak_buzzard.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
