@@ -3,6 +3,10 @@ header[incover="true"] * {
     border-color: rgb(111,111,111) !important;
 }
 
+header[incover="true"] #cont-menu #cont-menu--services a {
+    font-weight: bold !important;
+}
+
 header[incover="true"] #bMenu::before {
     border-color: black;
 }
