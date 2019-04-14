@@ -1,3 +1,7 @@
+.scroll {
+    overflow-y: hidden;
+}
+
 header[incover="true"] * {
     color: black;
     border-color: rgb(111,111,111) !important;
@@ -24,7 +28,7 @@ header #cont-menu #cont-menu--services {
     position: fixed;
     padding-top: 100px;
     box-sizing: border-box;
-    background: rgba( 11, 11, 11, 0.9) !important;
+    background: rgba( 255, 255, 255, 0.9) !important;
 }
 
 header #cont-menu #cont-menu--services a {
@@ -35,13 +39,13 @@ header #cont-menu #cont-menu--services a {
     background: rgba( 240, 240, 240, 0);
 }
 
-header #cont-menu #cont-menu--services a:nth-child(2n) {
+header #cont-menu #cont-menu--services a:nth-child(2n+1) {
     background: rgba( 120, 120, 120, 0.1);
 }
 
 header #cont-menu #cont-menu--services.active {
     display: block;
-    background: rgba( 240, 240, 240, 0.9) !important;
+    background: rgba( 255, 255, 255, 0.9) !important;
 }
 
 .blur {

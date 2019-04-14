@@ -53,12 +53,12 @@ $(function () {
         if (
             status == "block"
         ) {
-            $('body').css('overflow-y','inherit');
+            $('body').removeClass('scroll');
             $("#space").removeClass("blur");
             $("#bMenu").removeClass("active");
             $("#cont-menu--services").removeClass("active");
         } else {
-            $('body').css('overflow-y','hidden');
+            $('body').addClass('scroll');
             $("#space").addClass("blur");
             $("#bMenu").addClass("active");
             $("#cont-menu--services").addClass("active");
